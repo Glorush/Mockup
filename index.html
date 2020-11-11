@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>PSD TO BOOTSTRAP</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta property="og:title" content="">
+	<meta property="og:type" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+ 	<!-- css files -->
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/fontawesom.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+	<!-- fonts --> <!-- 
+	<link rel="stylesheet" href="assets/fonts/fonts.min.css"> -->
+
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+	
+	<!-- Start header area design -->
+	<header class="header-area">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="head">
+
+						<!-- head-dots -->
+						<div class="head-dots">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+
+						<a href="#" class="nav-icon"><i class="fas fa-bars"></i></a>
+						<!-- bookapp -->
+						<div class="my_bookapp">
+							<a href="#"><i class="fas fa-book"></i><span>MyBookApp</span></a>
+						</div>
+
+						<div class="link-menu">
+							<ul class="nav-1">
+								<li><a href="#">Help Center         </a></li>
+								<li><a href="#">Our Support</a></li>
+								<li class="profile"><img src="assets/images/profile.png" alt="profile-image"><a href="#"><span>John Doe </span><i class="fas fa-angle-down click-pro"></i></a></li>
+							</ul>
+							<div class="user-prifile">
+								<ul>
+									<li><a href="#">My Profile</a></li>
+									<li><a href="#">Account Settings</a></li>
+									<li><a href="#">Sign Out</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End header area design -->
+
+	<!--Start main-area  -->
+	<section class="main-area">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3">
+					<!-- side-bar -->
+					<div class="side-bar">
+						<!-- add book -->
+						<div class="add-book">
+							<a href="#"><i class="fas fa-plus"></i>Add a Book</a>
+						</div>
+
+						<!-- main-nav -->
+						<div class="main-nav">
+							<ul>
+								<li><a href="#"><i class="fas fa-book"></i>Now Reading</a></li>
+								<li><a href="#"><i class="fab fa-firefox"></i>Browse</a></li>
+								<li><a href="#"><i class="fas fa-shopping-cart"></i>Buy Books</a></li>
+								<li><a href="#"><i class="fas fa-star"></i>Favourite Books</a></li>
+								<li><a href="#"><i class="fas fa-list"></i>Wishlist</a></li>
+								<li><a href="#"><i class="fas fa-history"></i>History</a></li>
+							</ul>
+						</div>
+
+						<!-- personal categories -->
+						<div class="personal-categories align-items-center">
+							<ul>
+								<li><a href="#"><span></span>Must Read Titles</a></li>
+								<li><a href="#"><span></span>Best Of List</a></li>
+								<li><a href="#"><span></span>Classic Novels</a></li>
+								<li><a href="#"><span></span>Non Fiction</a></li>
+							</ul>
+						</div>
+
+						<!-- history list -->
+						<div class="history-list">
+							<ul>
+								<li><i class="fas fa-history"></i><a href="#">You added <span>Fight Club</span> by <span>Chuck Palahniuk</span> to your <span>Must Read Titles.</span></a> <span class="history-time">24 minutes ago</span></li>
+
+								<li><i class="fas fa-history"></i><a href="#">You added <span>The Trial</span> by <span>Franz Kafka</span> to your <span>Must Read Titles.</span></a>  <span class="history-time">48 minutes ago</span></li>
+							</ul>
+						</div>
+
+
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="book-all-items">
+						<div class="browse-Available">
+							<h2>Browse Available Books</h2>
+						</div>
+						<hr>
+						<div class="main-filter">
+							<div class="books-filter">
+								<ul>
+									<li class="mixitup-control-active" data-filter="all">All Books</li>
+									<li class="" data-filter=".resent">Most Recent </li>        
+									<li class="" data-filter=".popular">Most Popular </li>       
+									<li class="" data-filter=".free">Free Books</li>
+								</ul>
+							</div>
+							<div class="search-filter">
+								<form>
+									<input type="search" name="search" placeholder="Enter Keywords">
+									<button><i class="fas fa-search"></i></button>
+								</form>
+								<a href="#" class="openBtn" onclick="openSearch()"><i class="fas fa-search"></i></a>
+							</div>
+						</div>
+						<div id="myOverlay" class="overlay">
+						  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+						  <div class="overlay-content">
+						    <form action="/action_page.php">
+						      <input type="text" placeholder="Search.." name="search">
+						      <button type="submit"><i class="fa fa-search"></i></button>
+						    </form>
+						  </div>
+						</div>
+						<hr>
+
+						<div class="main-book-area">
+						<div class="book-filter filtering">
+
+							<!-- book-items -->
+								
+							<div class="book-items mix resent">
+								<div class="book-img">
+									<img src="assets/images/book/1.png" alt="book-image">
+								</div>
+								<div class="book-content">
+									<h3>Jewels of Nizam</h3>
+									<span>by Geeta Devi</span>
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+								</div>
+							</div>
+
+							<!-- book-items -->
+							<div class="book-items mix popular">
+								<div class="book-img">
+									<img src="assets/images/book/2.png" alt="book-image">
+								</div>
+								<div class="book-content">
+									<h3>Jewels of Nizam</h3>
+									<span>by Geeta Devi</span>
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+								</div>
+							</div>
+
+							<!-- book-items -->
+							<div class="book-items mix free">
+								<div class="book-img">
+									<img src="assets/images/book/3.png" alt="book-image">
+								</div>
+								<div class="book-content">
+									<h3>Jewels of Nizam</h3>
+									<span>by Geeta Devi</span>
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+								</div>
+							</div>
+
+							<!-- book-items -->
+							<div class="book-items mix resent free">
+								<div class="book-img">
+									<img src="assets/images/book/4.png" alt="book-image">
+								</div>
+								<div class="book-content">
+									<h3>Jewels of Nizam</h3>
+									<span>by Geeta Devi</span>
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+								</div>
+							</div>
+							<!-- book-items -->
+							<div class="book-items mix resent">
+								<div class="book-img">
+									<img src="assets/images/book/5.png" alt="book-image">
+								</div>
+								<div class="book-content">
+									<h3>Jewels of Nizam</h3>
+									<span>by Geeta Devi</span>
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+								</div>
+							</div>
+							<!-- book-items -->
+							<div class="book-items mix popular">
+								<div class="book-img">
+									<img src="assets/images/book/6.png" alt="book-image">
+								</div>
+								<div class="book-content">
+									<h3>Jewels of Nizam</h3>
+									<span>by Geeta Devi</span>
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+								</div>
+							</div>
+							<!-- book-items -->
+							<div class="book-items mix resent free">
+								<div class="book-img">
+									<img src="assets/images/book/7.png" alt="book-image">
+								</div>
+								<div class="book-content">
+									<h3>Jewels of Nizam</h3>
+									<span>by Geeta Devi</span>
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+								</div>
+							</div>
+							<!-- book-items -->
+							<div class="book-items mix popular">
+								<div class="book-img">
+									<img src="assets/images/book/8.png" alt="book-image">
+								</div>
+								<div class="book-content">
+									<h3>Jewels of Nizam</h3>
+									<span>by Geeta Devi</span>
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></p>
+								</div>
+							</div>
+							<!-- book-items -->
+							<div class="book-items mix free">
+								<div class="book-img">
+									<img src="assets/images/book/9.png" alt="book-image">
+								</div>
+								<div class="book-content">
+									<h3>Jewels of Nizam</h3>
+									<span>by Geeta Devi</span>
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+								</div>
+							</div>
+							<!-- book-items -->
+							<div class="book-items mix resent popular">
+								<div class="book-img">
+									<img src="assets/images/book/10.png" alt="book-image">
+								</div>
+								<div class="book-content">
+									<h3>Jewels of Nizam</h3>
+									<span>by Geeta Devi</span>
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+								</div>
+							</div>
+							<!-- book-items -->
+							<div class="book-items mix popular">
+								<div class="book-img">
+									<img src="assets/images/book/2.png" alt="book-image">
+								</div>
+								<div class="book-content">
+									<h3>Jewels of Nizam</h3>
+									<span>by Geeta Devi</span>
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+								</div>
+							</div>
+
+							<!-- book-items -->
+							<div class="book-items mix free">
+								<div class="book-img">
+									<img src="assets/images/book/3.png" alt="book-image">
+								</div>
+								<div class="book-content">
+									<h3>Jewels of Nizam</h3>
+									<span>by Geeta Devi</span>
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+								</div>
+							</div>
+							<!-- book-items -->
+							<div class="book-items mix resent free">
+								<div class="book-img">
+									<img src="assets/images/book/7.png" alt="book-image">
+								</div>
+								<div class="book-content">
+									<h3>Jewels of Nizam</h3>
+									<span>by Geeta Devi</span>
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+								</div>
+							</div>
+							<!-- book-items -->
+							<div class="book-items mix popular">
+								<div class="book-img">
+									<img src="assets/images/book/8.png" alt="book-image">
+								</div>
+								<div class="book-content">
+									<h3>Jewels of Nizam</h3>
+									<span>by Geeta Devi</span>
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></p>
+								</div>
+							</div>
+
+							<!-- book-items -->
+							<div class="book-items mix resent free">
+								<div class="book-img">
+									<img src="assets/images/book/4.png" alt="book-image">
+								</div>
+								<div class="book-content">
+									<h3>Jewels of Nizam</h3>
+									<span>by Geeta Devi</span>
+									<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+								</div>
+							</div>
+
+
+						</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End main-area  -->
+
+	<!-- Start footer area -->
+	<footer class="footer-area">
+		<div class="footer">
+			<i class="fas fa-question-circle"></i>
+			<i class="fas fa-cog"></i>
+		</div>
+	</footer>
+	<!-- End footer area -->
+
+ 	<!-- script file -->
+ 	<script src="assets/js/jquery.min.js"></script>
+ 	<script src="assets/js/popper.min.js"></script>
+ 	<script src="assets/js/bootstrap.min.js"></script>
+ 	<script src="assets/js/fontawesome.min.js"></script>
+ 	<script src="assets/js/owl.carousel.min.js"></script>
+ 	<script src="assets/js/mixitup.min.js"></script>
+ 	<script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
